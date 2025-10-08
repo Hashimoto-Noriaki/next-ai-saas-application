@@ -1,6 +1,7 @@
-import { LayoutDashboard } from 'include-react'
+import { Image,ImageDown,Layers,LayoutDashboard,Settings} from 'include-react'
+import { NavItem } from '@/types/nav'
 
-export const navItem = [
+export const navItems:NavItem[] = [
     {
         title:"ダッシュボード",
         href:"/dashboard",
