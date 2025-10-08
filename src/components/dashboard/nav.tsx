@@ -1,6 +1,6 @@
 export const DashboardNav = () => {
     return (
-        <nav></nav>
+        <nav>ダッシュボード</nav>
     )
 }
 
