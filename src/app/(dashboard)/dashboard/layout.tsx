@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DashboardNav } from '../../../components/dashboard/nav'
+import { MobileNav } from '../../../components/dashboard/mobile-nav'
 
 //layout.tsxから取ってくる
 export default function DashboardLayout({
@@ -12,6 +13,7 @@ export default function DashboardLayout({
             {/* header */}
             <header className="sticky top-0 z-40 border-b bg-background">
                 <div className="container flex items-center h-16 px-4">
+                    <MobileNav/>
                     <Link href="/">
                         <h1 className="text-lg font-bold">AI Image Generator</h1>
                     </Link>
