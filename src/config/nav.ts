@@ -1,4 +1,4 @@
-import { Image,ImageDown,Layers,LayoutDashboard,Settings} from 'include-react'
+import { Image,ImageDown,Layers,LayoutDashboard,Settings} from 'lucide-react'
 import { NavItem } from '@/types/nav'
 
 export const navItems:NavItem[] = [
