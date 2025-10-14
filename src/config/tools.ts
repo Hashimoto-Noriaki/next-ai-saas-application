@@ -12,8 +12,10 @@ export const tools = {
         component:ImageGenerator
     },
     optimize: {
-        title:"画像最適化",
+        title:"画像圧縮",
         description:"画像を最適化してサイズを縮小",
         component:ImageGenerator
     },
 }
+
+export type ToolType = keyof typeof tools;
