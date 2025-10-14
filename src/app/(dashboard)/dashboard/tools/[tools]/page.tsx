@@ -1,4 +1,5 @@
 import { tools } from '@/config/tools'
+import { notFound } from 'next/navigation'
 
 const ToolPage = async ({ params }: {params:Promise<{ tool:string }>}) => {
     const toolType = (await params).tools as ToolType
