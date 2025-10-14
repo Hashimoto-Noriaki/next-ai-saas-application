@@ -1,7 +1,7 @@
 import { tools } from '@/config/tools'
 
 const ToolPage = ({params}: {params:{tool:string}}) => {
-    const toolType = params.tools
+    const toolType = params.tools as ToolType
     const tool = tools[toolType];
     return (
         <div>

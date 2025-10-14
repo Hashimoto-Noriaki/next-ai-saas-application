@@ -17,3 +17,5 @@ export const tools = {
         component:ImageGenerator
     },
 }
+
+export type ToolType = keyof typeof tools;
