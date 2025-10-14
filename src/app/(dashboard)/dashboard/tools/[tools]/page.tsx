@@ -1,3 +1,4 @@
+import PageContainer from '@/components/dashboard/page-container';
 import { tools } from '@/config/tools'
 import { notFound } from 'next/navigation'
 
@@ -11,9 +12,9 @@ const ToolPage = async ({ params }: {params:Promise<{ tool:string }>}) => {
     }
 
     return (
-        <div>
+        <PageContainer>
             <h1>{tool.title}</h1>
-        </div>
+        </PageContainer>
     )
 }
 
