@@ -1,7 +1,7 @@
 import { tools } from '@/config/tools'
 
-const ToolPage = ({params}: {params:{tool:string}}) => {
-    const toolType = params.tools as ToolType
+const ToolPage = async ({ params }: {params:Promise<{ tool:string }>}) => {
+    const toolType = (await params).tools as ToolType
     const tool = tools[toolType];
     return (
         <div>
