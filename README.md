@@ -2,6 +2,8 @@
 ```bash
 npm run dev
 ```
+### 画像生成のAPI(Stability AI)
+https://stability.ai/
 
 ### 画像生成のAPI(DALL·E 3 API)
 
