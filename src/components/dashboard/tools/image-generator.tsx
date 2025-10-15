@@ -1,27 +1,20 @@
+"use client"
+
+import { generateImage } from "@/actions/actions";
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
+import { useActionState } from 'react'
+
+const initialState = {
+    status:"idle"//idleとは待機中
+}
 
 export const ImageGenerator = () => {
-    async function generateImage(formData:FormData){
-        "use server"
-        const keyword = formData.get("keyword");
-        try {
-            await fetch(`${process.env.BASE_URL}/api/generate-image`,{
-                method:"POST",
-                headers:{
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({keyword}),
-            })
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
+    const [state,formAction] = useActionState(generateImage,initialState);
     return (
         <div className="space-y-6">
-            <form action={generateImage} className="space-y-4">
+            <form action={formAction} className="space-y-4">
                 <div className="space-y-2">
                     <Label htmlFor="keyword">キーワード</Label>
                     <Input 
