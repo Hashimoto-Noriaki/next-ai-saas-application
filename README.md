@@ -10,3 +10,7 @@ https://platform.stability.ai/docs/api-reference#tag/Generate/paths/~1v2beta~1st
 ### 画像生成のAPI(DALL·E 3 API)
 
 https://help.openai.com/en/articles/8555480-dalle-3-api
+
+### Server Actions
+
+https://nextjs.org/docs/14/app/building-your-application/data-fetching/server-actions-and-mutations
