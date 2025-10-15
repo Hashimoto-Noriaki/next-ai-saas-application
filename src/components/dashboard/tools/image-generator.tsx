@@ -3,8 +3,9 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 
 export const ImageGenerator = () => {
-    async function generateImage(){
+    async function generateImage(formData:FormData){
         "use server"
+        const keyword = formData.get("keyword");
         try {
             await fetch(`${process.env.BASE_URL}/api/generate-image`,{
                 method:"POST",
