@@ -2,6 +2,11 @@
 ```bash
 npm run dev
 ```
+## インストール
+```
+npm install
+```
+
 ### 画像生成のAPI(Stability AI)
 https://stability.ai/
 
